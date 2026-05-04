@@ -1,70 +1,81 @@
 body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  font-family: Arial, sans-serif;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f6f9;
 }
 
-/* Calculator box */
-.calculator {
-  width: 230px;
-  background: #1e1e2f;
-  padding: 20px;
-  border-radius: 15px;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+.profile-img img {
+    width: 100;
+    height: 100%;
+    object-fit: cover;
+}
+.profile-img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 5px solid #fff;
 }
 
-/* Display */
-.display {
-  width: 100%;
-  height: 60px;
-  border: none;
-  outline: none;
-  margin-bottom: 15px;
-  font-size: 24px;
-  text-align: right;
-  padding: 10px;
-  border-radius: 10px;
-  background: #2c2c3e;
-  color: white;
+
+/* Main container */
+.resume-container {
+    display: flex;
+    width:800px;
+    height: 800px;
+    margin: 40px auto;
+    background: #fff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
 }
 
-/* Grid buttons */
-.buttons {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 10px;
+/* Sidebar */
+.sidebar {
+    width: 30%;
+    background: #2c3e50;
+    color: white;
+    padding: 20px;
 }
 
-/* All buttons */
-button {
-  height: 50px;
-  border: none;
-  border-radius: 10px;
-  font-size: 18px;
-  cursor: pointer;
-  background: #3b3b5c;
-  color: white;
-  transition: 0.2s;
+.sidebar h2 {
+    margin: 0;
 }
 
-/* Hover effect */
-button:hover {
-  background: #57577a;
+.role {
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: #ccc;
 }
 
-/* Operator buttons */
-.op {
-  color: white;
+.section {
+    margin-top: 20px;
 }
 
-/* Equal button */
-.equal {
-  color: white;
+.section h3 {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 20px;
 }
 
-/* Zero button wider */
-.zero {
-  grid-column: span 2;
+.section ul {
+    padding-left: 15px;
+}
+
+/* Main content */
+.main-content {
+    width: 70%;
+    padding: 20px;
+}
+
+/* Cards (rectangle boxes like your design) */
+.card {
+    background:whitesmoke;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card h3 {
+    margin-top: 0;
 }
